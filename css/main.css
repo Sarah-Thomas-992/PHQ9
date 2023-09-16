@@ -88,7 +88,7 @@ textarea {
    ========================================================================== */
 
 body{
-  background: rgb(170, 202, 233);
+  background: rgb(170, 213, 233);
   display: flex;
   justify-content: center;
 }
@@ -97,14 +97,12 @@ body{
 .content-wrapper{
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   width: 90%;
 }
 .contact-form{
   display: flex;
   align-items: center;
-  flex-direction: column;
 }
 
 #formio,
@@ -113,8 +111,12 @@ p {
   width: 100%;
 }
 
-#formio .formio-component{
+#formio{
   margin-top: 20px;
+}
+
+#formio .formio-component{
+  margin-top: 30px;
 }
 
 .instructions1{
@@ -123,11 +125,21 @@ p {
 
 .instructions2 {
   line-height: 0.8em;
-  margin: 40px 0;
+  margin: 40px 0 40px 20px;
   font-size: 0.9em;
 }
 
+.interpret-table {
+  border: 1px black solid;
+}
+
 #formio .formio-component .totalHTML {
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+#formio .formio-component .total,
+#formio .formio-component .interpretation{
   margin-top: 0;
 }
 
@@ -139,8 +151,18 @@ p {
   display: none;
 }
 
+#formio button{
+  color: white;
+  background-color: rgb(15, 34, 49);
+  border: none;
+  border-radius: 7px;
+  padding: 7px;
+}
 
-
+#thank-you{
+  text-align: center;
+  margin-top: 50px;
+}
 
 
 
@@ -235,32 +257,13 @@ p {
 
 @media only screen and (min-width: 768px) {
   .content-wrapper{
-    width: 70%;
+    width: 80%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .content-wrapper{
-    width: 90%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  img{
-    width: 90%;
-    padding-top: 50px;
-  }
-
-  .img-format{
-    width: 60%;
-  }
-
   .contact-form{
-    margin-top: 50px;
     width: 50%;
-    justify-content: center;
-    align-items: center;
   }
 }
 
